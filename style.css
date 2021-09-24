@@ -1,477 +1,477 @@
-    @import url('https://fonts.googleapis.com/css2?family=Quattrocento&display=swap');
-    /*Imported font from google*/
+@import url('https://fonts.googleapis.com/css2?family=Quattrocento&display=swap');
+/*Imported font from google*/
 
-    html,
-    body {
-        height: 99%;
+html,
+body {
+    height: 99%;
+    background-color: black;
+    background-attachment: fixed;
+    /*For avoiding scrollbar*/
+}
+
+* {
+    box-sizing: border-box;
+    /*oletuksena leveyden ja korkeuden asetukset sisältävät padding- ja border-ominaisuuksia*/
+    font-family: 'Quattrocento', serif;
+    /*using font from google*/
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+
+h1 {
+    font-family: 'Quattrocento', serif;
+}
+
+nav {
+    padding: auto;
+
+}
+
+nav ul {
+    list-style-type: none;
+    padding-left: 0;
+    width: 13rem;
+}
+
+nav ul :nth-child(2) {
+    padding-left: 0;
+
+}
+
+nav li {
+    margin-bottom: 1rem;
+    border: #a24f51 1px solid;
+    background-image: linear-gradient(to left bottom, rgba(156, 120, 78, 0.26), rgb(129, 78, 76));
+    background-size: 100%;
+    height: 3rem;
+    border-radius: 4px;
+
+}
+
+
+nav li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-left: 0;
+    float: left;
+    padding-top: 0.9rem;
+    padding-left: 1rem;
+}
+
+span {
+    font-size: 13pt;
+}
+
+a:visited {
+    color: rgb(204, 193, 193);
+}
+
+a:hover {
+    color: #000000;
+
+}
+
+#wrapper {
+    min-height: 100%;
+    /*Ensures that the wrapper stays the full height of the screen even if there is hardly any content*/
+    position: relative;
+    /*Allows to absolutely position elements inside wrapper later*/
+}
+
+#header {
+    position: absolute;
+    opacity: 1;
+    padding: 1em;
+    margin-bottom: 2em;
+    border: 0.1px rgb(218, 34, 34) solid;
+    border-radius: 0.4em;
+    height: 10em;
+    width: 100%;
+}
+
+#header h1 {
+    margin-left: 10rem;
+}
+
+#header h1 a {
+    text-decoration: none;
+
+
+}
+
+#ylataust {
+    max-width: 100%;
+    height: 40vh;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.10), rgba(0, 0, 0, 0.73)), url(./media/edit6.jpg);
+    background-size: 100%;
+}
+
+
+
+#projectalam {
+
+    margin-bottom: 1rem;
+    border: #a24f51 1px solid;
+    background-image: linear-gradient(to left bottom, rgba(156, 120, 78, 0.26), rgb(129, 78, 76));
+    background-size: 100%;
+    margin-left: 1.5rem;
+    margin-right: -1rem;
+
+
+}
+
+#projectalam li {
+    margin-bottom: 0.3rem;
+    border: none;
+
+    height: 2rem;
+    background-image: none;
+}
+
+#projectalam a {
+    margin-left: 2.7rem;
+
+}
+
+.projectSub:first-child {
+    margin-top: -0.5rem;
+}
+
+#navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 11rem;
+    opacity: 1;
+    padding: 1rem;
+    margin-bottom: 2em;
+    border: 0.1px rgb(218, 34, 34) solid;
+    border-radius: 0.4em;
+    height: 74vh;
+    width: 20%;
+    min-width: 15rem;
+}
+
+/*Here are all main content*/
+
+/*created main box for footer to stay always bottom of the page*/
+
+.tab {
+    text-indent: 30px;
+}
+
+.content {
+    display: grid;
+    margin-top: 8rem;
+    color: white;
+    width: 58%;
+    height: 100%;
+    border: 0.1px rgb(34, 218, 49) solid;
+
+}
+
+.contentHeading {
+    border: blue 1px solid;
+    height: 2rem;
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+.contentHeading h3 {
+    margin-top: 0;
+    text-transform: uppercase;
+}
+
+#profiilipilt {
+    margin-top: 7rem;
+    background-image: url(./media/profile2.png);
+    background-size: cover;
+    margin-left: 0;
+    top: 10%;
+    width: 20%;
+    height: 109vh;
+    color: white;
+    border: 0.1px rgb(218, 34, 34) solid;
+
+}
+
+#main {
+    display: flex;
+    justify-content: space-between;
+    overflow: auto;
+    padding-bottom: 6em;
+    /* Height of the footer */
+}
+
+
+
+/*See siis teksti tyhiku  jaoks*/
+
+
+
+#intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20vh;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    overflow: hidden;
+
+}
+
+#projects {
+    margin-top: 3em;
+    height: 15em;
+    text-align: center;
+}
+
+#projects li {
+    margin: 1em 0;
+    list-style: none;
+}
+
+#publications {
+    /*border: solid black 1px;*/
+    margin-top: 5em;
+    text-align: center;
+}
+
+.video1 {
+    height: 10em;
+    width: 15em;
+}
+
+.video2 {
+    height: 10em;
+    width: 15em;
+}
+
+
+/*Here are footer styles*/
+
+footer {
+
+    position: absolute;
+    bottom: 0;
+    /*Moves the footer bottom of the page*/
+    width: 100%;
+    height: 6em;
+    /* Height of the footer */
+    color: #fff;
+
+    border-radius: 0.4em;
+    border-radius: 0.4em;
+
+}
+
+#socialmedia {
+    padding-top: 0.6em;
+    padding-left: 20em;
+    float: left;
+    height: 6em;
+    width: 43.5%;
+
+}
+
+/*socialmedia links*/
+.fa {
+    padding: 20px;
+    text-align: center;
+    margin: 5px 2px;
+    font-size: 30px;
+    width: 50px;
+    border-radius: 24%;
+}
+
+.fa:hover {
+    opacity: 0.5;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
+
+.fa-youtube {
+    background: #bb0000;
+    color: white;
+}
+
+/*Here starts contact form styling*/
+fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+    background-color: #91acc2;
+}
+
+#contact {
+    padding-top: 0.6em;
+    float: left;
+    height: 6em;
+    width: 15em;
+    text-align: center;
+}
+
+#contact p {
+    font-size: 12pt;
+    margin: 0;
+}
+
+#contactBox {
+    top: 10%;
+    left: 25%;
+    color: rgb(13, 14, 13);
+    border: 1px solid black;
+    display: none;
+    position: absolute;
+    box-shadow: 20px 20px 500px 100px rgb(53, 50, 50);
+
+}
+
+#contactLink {
+    position: relative;
+    color: rgb(204, 193, 193)
+}
+
+#contactLink:hover {
+    cursor: pointer;
+    color: #000000;
+}
+
+#contactCloseBtn {
+    position: absolute;
+    right: 2%;
+    top: 2%;
+}
+
+#message {
+    width: 50em;
+    height: 25em;
+    margin-left: .5em;
+    margin-right: .5em;
+}
+
+#emailbox {
+    float: right;
+    width: 55%;
+}
+
+#contactConfirm {
+    width: 25em;
+    height: 25em;
+    top: 10%;
+    left: 25%;
+    color: rgb(13, 14, 13);
+    display: none;
+    border: 1px solid black;
+    background-color: #91acc2;
+    position: absolute;
+    box-shadow: 20px 20px 500px 100px rgb(53, 50, 50);
+}
+
+#confirmCloseBtn {
+    position: absolute;
+    right: 2%;
+    top: 2%;
+}
+
+.gameContent {
+    padding: 2rem;
+    margin-top: 0;
+    width: 100%;
+    background-color: rgba(238, 225, 198, 0.151);
+
+    opacity: 0.8;
+}
+
+/*Ttying out different animations and transititons*/
+#animation1 {
+    background-color: orangered;
+    width: 100px;
+    height: 100px;
+    margin: 1rem auto;
+    animation: 2s circle infinite alternate;
+}
+
+@keyframes circle {
+    0% {
+        border-radius: 0%;
+    }
+
+    100% {
+        border-radius: 100%;
         background-color: black;
-        background-attachment: fixed;
-        /*For avoiding scrollbar*/
     }
+}
 
-    * {
-        box-sizing: border-box;
-        /*oletuksena leveyden ja korkeuden asetukset sisältävät padding- ja border-ominaisuuksia*/
-        font-family: 'Quattrocento', serif;
-        /*using font from google*/
-    }
-
-    a:link {
-        text-decoration: none;
-    }
-
-    a:visited {
-        text-decoration: none;
-    }
-
-    a:hover {
-        text-decoration: none;
-    }
-
-    a:active {
-        text-decoration: none;
-    }
-
-
-    h1 {
-        font-family: 'Quattrocento', serif;
-    }
-
-    nav {
-        padding: auto;
-
-    }
-
-    nav ul {
-        list-style-type: none;
-        padding-left: 0;
-        width: 13rem;
-    }
-
-    nav ul :nth-child(2) {
-        padding-left: 0;
-
-    }
-
-    nav li {
-        margin-bottom: 1rem;
-        border: #a24f51 1px solid;
-        background-image: linear-gradient(to left bottom, rgba(156, 120, 78, 0.26), rgb(129, 78, 76));
-        background-size: 100%;
-        height: 3rem;
-        border-radius: 4px;
-
-    }
-
-
-    nav li a {
-        text-decoration: none;
-        text-transform: uppercase;
-        margin-left: 0;
-        float: left;
-        padding-top: 0.9rem;
-        padding-left: 1rem;
-    }
-
-    span {
-        font-size: 13pt;
-    }
-
-    a:visited {
-        color: rgb(204, 193, 193);
-    }
-
-    a:hover {
-        color: #000000;
-
-    }
-
-    #wrapper {
-        min-height: 100%;
-        /*Ensures that the wrapper stays the full height of the screen even if there is hardly any content*/
-        position: relative;
-        /*Allows to absolutely position elements inside wrapper later*/
-    }
-
-    #header {
-        position: absolute;
-        opacity: 1;
-        padding: 1em;
-        margin-bottom: 2em;
-        border: 0.1px rgb(218, 34, 34) solid;
-        border-radius: 0.4em;
-        height: 10em;
-        width: 100%;
-    }
-
-    #header h1 {
-        margin-left: 10rem;
-    }
-
-    #header h1 a {
-        text-decoration: none;
-
-
-    }
-
-    #ylataust {
-        max-width: 100%;
-        height: 40vh;
-        background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.10), rgba(0, 0, 0, 0.73)), url(./media/edit6.jpg);
-        background-size: 100%;
-    }
-
-
-
-    #projectalam {
-
-        margin-bottom: 1rem;
-        border: #a24f51 1px solid;
-        background-image: linear-gradient(to left bottom, rgba(156, 120, 78, 0.26), rgb(129, 78, 76));
-        background-size: 100%;
-        margin-left: 1.5rem;
-        margin-right: -1rem;
-
-
-    }
-
-    #projectalam li {
-        margin-bottom: 0.3rem;
-        border: none;
-
-        height: 2rem;
-        background-image: none;
-    }
-
-    #projectalam a {
-        margin-left: 2.7rem;
-
-    }
-
-    .projectSub:first-child {
-        margin-top: -0.5rem;
-    }
-
-    #navbar {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        margin-top: 11rem;
-        opacity: 1;
-        padding: 1rem;
-        margin-bottom: 2em;
-        border: 0.1px rgb(218, 34, 34) solid;
-        border-radius: 0.4em;
-        height: 74vh;
-        width: 20%;
-        min-width: 15rem;
-    }
-
-    /*Here are all main content*/
-
-    /*created main box for footer to stay always bottom of the page*/
-
-    .tab {
-        text-indent: 30px;
-    }
-
-    .content {
-        display: grid;
-        margin-top: 8rem;
-        color: white;
-        width: 58%;
-        height: 100%;
-        border: 0.1px rgb(34, 218, 49) solid;
-
-    }
-
-    .contentHeading {
-        border: blue 1px solid;
-        height: 2rem;
-        overflow: hidden;
-        margin-bottom: 1rem;
-    }
-
-    .contentHeading h3 {
-        margin-top: 0;
-        text-transform: uppercase;
-    }
-
-    #profiilipilt {
-        margin-top: 7rem;
-        background-image: url(./media/profile2.png);
-        background-size: cover;
-        margin-left: 0;
-        top: 10%;
-        width: 20%;
-        height: 109vh;
-        color: white;
-        border: 0.1px rgb(218, 34, 34) solid;
-
-    }
-
-    #main {
-        display: flex;
-        justify-content: space-between;
-        overflow: auto;
-        padding-bottom: 6em;
-        /* Height of the footer */
-    }
+#transition1 {
+    background: rgb(62, 146, 125);
+    width: 100px;
+    height: 100px;
+    margin: 2rem auto;
+    transition-duration: 800ms;
+    transition-property: background, transform;
+    transition-timing-function: ease-in;
 
+}
 
+#transition1:hover {
+    background: brown;
+    transform: rotate(45deg);
+}
 
-    /*See siis teksti tyhiku  jaoks*/
+#transition2 {
 
 
+    margin-right: 50%;
+    height: 100px;
+    max-width: 100px;
+    display: flex;
+    justify-content: center;
+    border-radius: 30px;
+    background: cornflowerblue;
+    transition-duration: 100ms;
+    transition-timing-function: ease-in;
+    align-items: center;
 
-    #intro {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 20vh;
-        margin-left: 3vw;
-        margin-right: 3vw;
-        overflow: hidden;
 
-    }
-
-    #projects {
-        margin-top: 3em;
-        height: 15em;
-        text-align: center;
-    }
-
-    #projects li {
-        margin: 1em 0;
-        list-style: none;
-    }
-
-    #publications {
-        /*border: solid black 1px;*/
-        margin-top: 5em;
-        text-align: center;
-    }
-
-    .video1 {
-        height: 10em;
-        width: 15em;
-    }
-
-    .video2 {
-        height: 10em;
-        width: 15em;
-    }
-
-
-    /*Here are footer styles*/
-
-    footer {
-
-        position: absolute;
-        bottom: 0;
-        /*Moves the footer bottom of the page*/
-        width: 100%;
-        height: 6em;
-        /* Height of the footer */
-        color: #fff;
-
-        border-radius: 0.4em;
-        border-radius: 0.4em;
-
-    }
-
-    #socialmedia {
-        padding-top: 0.6em;
-        padding-left: 20em;
-        float: left;
-        height: 6em;
-        width: 43.5%;
-
-    }
-
-    /*socialmedia links*/
-    .fa {
-        padding: 20px;
-        text-align: center;
-        margin: 5px 2px;
-        font-size: 30px;
-        width: 50px;
-        border-radius: 24%;
-    }
-
-    .fa:hover {
-        opacity: 0.5;
-    }
-
-    .fa-facebook {
-        background: #3B5998;
-        color: white;
-    }
-
-    .fa-twitter {
-        background: #55ACEE;
-        color: white;
-    }
-
-    .fa-linkedin {
-        background: #007bb5;
-        color: white;
-    }
-
-    .fa-instagram {
-        background: #125688;
-        color: white;
-    }
-
-    .fa-youtube {
-        background: #bb0000;
-        color: white;
-    }
-
-    /*Here starts contact form styling*/
-    fieldset {
-        border: none;
-        margin: 0;
-        padding: 0;
-        background-color: #91acc2;
-    }
-
-    #contact {
-        padding-top: 0.6em;
-        float: left;
-        height: 6em;
-        width: 15em;
-        text-align: center;
-    }
+}
 
-    #contact p {
-        font-size: 12pt;
-        margin: 0;
-    }
-
-    #contactBox {
-        top: 10%;
-        left: 25%;
-        color: rgb(13, 14, 13);
-        border: 1px solid black;
-        display: none;
-        position: absolute;
-        box-shadow: 20px 20px 500px 100px rgb(53, 50, 50);
-
-    }
-
-    #contactLink {
-        position: relative;
-        color: rgb(204, 193, 193)
-    }
-
-    #contactLink:hover {
-        cursor: pointer;
-        color: #000000;
-    }
-
-    #contactCloseBtn {
-        position: absolute;
-        right: 2%;
-        top: 2%;
-    }
-
-    #message {
-        width: 50em;
-        height: 25em;
-        margin-left: .5em;
-        margin-right: .5em;
-    }
-
-    #emailbox {
-        float: right;
-        width: 55%;
-    }
-
-    #contactConfirm {
-        width: 25em;
-        height: 25em;
-        top: 10%;
-        left: 25%;
-        color: rgb(13, 14, 13);
-        display: none;
-        border: 1px solid black;
-        background-color: #91acc2;
-        position: absolute;
-        box-shadow: 20px 20px 500px 100px rgb(53, 50, 50);
-    }
-
-    #confirmCloseBtn {
-        position: absolute;
-        right: 2%;
-        top: 2%;
-    }
-
-    .gameContent {
-        padding: 2rem;
-        margin-top: 0;
-        width: 100%;
-        background-color: rgba(238, 225, 198, 0.151);
+#transition2:hover {
+    transform: translateX(190px);
 
-        opacity: 0.8;
-    }
-
-    /*Ttying out different animations and transititons*/
-    #animation1 {
-        background-color: orangered;
-        width: 100px;
-        height: 100px;
-        margin: 1rem auto;
-        animation: 2s circle infinite alternate;
-    }
-
-    @keyframes circle {
-        0% {
-            border-radius: 0%;
-        }
-
-        100% {
-            border-radius: 100%;
-            background-color: black;
-        }
-    }
-
-    #transition1 {
-        background: rgb(62, 146, 125);
-        width: 100px;
-        height: 100px;
-        margin: 2rem auto;
-        transition-duration: 800ms;
-        transition-property: background, transform;
-        transition-timing-function: ease-in;
-
-    }
-
-    #transition1:hover {
-        background: brown;
-        transform: rotate(45deg);
-    }
-
-    #transition2 {
-
-
-        margin-right: 50%;
-        height: 100px;
-        max-width: 100px;
-        display: flex;
-        justify-content: center;
-        border-radius: 30px;
-        background: cornflowerblue;
-        transition-duration: 100ms;
-        transition-timing-function: ease-in;
-        align-items: center;
-
 
-    }
-
-    #transition2:hover {
-        transform: translateX(190px);
-
-
-    }
+}
