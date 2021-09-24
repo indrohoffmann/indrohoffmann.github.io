@@ -1,10 +1,11 @@
-var contactBtn = document.getElementById('contactBtn');
+var contactLink = document.getElementById('contactLink');
 var closeWindow = document.getElementById('contactCloseBtn');
 var contactConfirm = document.getElementById('contactConfirm');
-var confirmClosetBtn = document.getElementById('confirmCloseBtn')
+var confirmClosetBtn = document.getElementById('confirmCloseBtn');
 
 
-contactBtn.onclick = function () {
+
+contactLink.onclick = function () {
     document.getElementById('contactBox').style.display = "block";
     /* body.classList.add('backStyle');*/
 }
@@ -13,6 +14,8 @@ closeWindow.onclick = function () {
     document.getElementById('contactBox').style.display = "none";
     /* body.classList.remove('backStyle')*/
 }
+
+
 var contactform = document.getElementById('contactform')
 contactform.addEventListener('submit', function (e) {
     e.preventDefault()

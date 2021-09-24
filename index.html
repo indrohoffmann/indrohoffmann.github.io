@@ -2,38 +2,72 @@
 <html lang="fi">
 
 <head>
-    <title>IndroHoffmann</title>
+    <title>Indro</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
     <!--Linking css with html-->
     <meta name="keywords" content="indro, portfolio" />
     <meta name="author" content="Indro Hoffmann" />
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+
+
     <!--Sosial media icons-->
 </head>
 
 <body>
-    <div id="wrapper">
-        <!--Wrapper is used for pushing footer bottom of the page -->
-        <div id="logo">
-            <img src="media/Talv.jpeg" alt="profile picture" />
-        </div>
-        <div id="navbar">
-            <nav>
-
-                <button id="contactBtn">Contact me</button>
-
-            </nav>
-
-        </div>
+    <div id="ylataust">
+        <div id="wrapper">
+            <!--Wrapper is used for pushing footer bottom of the page -->
 
 
-        <div id="mainbox">
+
+            <div id="main">
+                <div id="header">
+                    <a href="index.html">
+                        <h1>Indro Hoffmann</h1>
+                    </a>
+                </div>
+                <div id="profiilipilt"></div>
+
+                <div id="navbar">
+                    <nav>
+                        <ul class="level1">
+                            <li><a href="projects.html">Projects</a></li>
+
+                            <li><a href="games.html">Psgawsp</a></li>
+                            <li><a href="games.html">Music</a></li>
+                            <li><a href="games.html">Blog</a></li>
+                            <li><a id="contactLink">Contact me</a></li>
+
+                        </ul>
+                    </nav>
+                </div>
+
+
+                <div class="content">
+                    <div class="contentHeading">
+                        <h3>Welcome!</h3>
+                    </div>
+                    <div id="intro">
+                        <p class="tab">I have started to learn front end web-development in Taitotalo, Finland.
+                            I am interested to learn everything about modern web development using html, css and Js.
+                            And also in future it would be nice to learn more programming languages and became to
+                            understand more complex backend development.
+                            I'm fascinated by the code.
+                            There is no end to what I can learn in coding and that is what makes it fun!</p>
+                        <p class="tab"> My hobby is music and I try to practice it as much as possible.
+                            In the right column I have collected some of my previous projects and also some music links
+                            about my playing and more.</p>
+                        <p class="tab"> I am very passionate about everything I do!
+                            Please feel free to contact me if I can be useful for you somehow! All contacts can be found
+                            at
+                            at the bottom of the page.</p>
+                    </div>
+                </div>
+            </div>
 
             <div id="contactBox">
-
-
-                <button id="contactCloseBtn">Close</button>
                 <form id="contactform" method="post">
                     <fieldset>
                         <h2>Contact</h2>
@@ -51,100 +85,36 @@
                         <input id="send" type="submit" value="Send message">
                     </fieldset>
                 </form>
-
-
+                <button id="contactCloseBtn">Close</button>
             </div>
-
-
 
             <div id="contactConfirm">
                 <p3 id="answer">You thänks</p3>
                 <button id="confirmCloseBtn">OK</button>
             </div>
 
-
-
-
-            <div class="infobox" id="infoboxleft">
-
-
-                <div id="infotext">
-
-                    <p class="tab">I have started to learn front end web-development in Taitotalo, Finland.
-                        I am interested to learn everything about modern web development using html, css and Js.
-                        And also in future it would be nice to learn more programming languages and became to
-                        understand more complex backend development.
-                        I'm fascinated by the code.
-                        There is no end to what I can learn in coding and that is what makes it fun!</p>
-                    <p class="tab"> My hobby is music and I try to practice it as much as possible.
-                        In the right column I have collected some of my previous projects and also some music links
-                        about my playing and more.</p>
-                    <p class="tab"> I am very passionate about everything I do!
-                        Please feel free to contact me if I can be useful for you somehow! All contacts can be found at
-                        at the bottom of the page.</p>
-
-                </div>
-            </div>
-
-            <div class="infobox" id="infoboxright">
-
-
-                <div id="projects">
-                    <ul>
-                        <li>
-                            <h1>Projects</h1>
-                        </li>
-
-                        <!--My project links are collected here-->
-
-                        <li><a href="tehtävä1/kuvasivu.html">Tehtävä</a>
-                        </li>
-
-                        <li><a href="https://marvelapp.com/signin?next=/project/5326870/design/74669882"
-                                target="_blank">Marvel</a>
-                        </li>
-
-                        <li><a href="games.html">Play stupid games and win stupid prizes</a>
-                        </li>
-
-                        <li><a href="https://indrohoffmann.github.io/portfolio.github.io/" target="_blank">Github
-                                projects</a></li>
-
-                        <li><a href=lomakesivu/lomakesivu.html>Lomakesivu </a> </li> </ul> <h1>Publications</h1>
-                                <iframe class="video1" src="https://www.youtube.com/embed/nzRfow8yVnU"
-                                    allowfullscreen></iframe>
-                                <iframe class="video2" src="https://www.youtube.com/embed/W_66KHOorl4"
-                                    allowfullscreen></iframe>
+            <footer>
+                <div id="socialmedia">
+                    <!--My socialmedia links are collected here-->
+                    <a href="https://www.facebook.com/indero/?viewas=100000686899395" target="_blank"
+                        class="fa fa-facebook"></a>
+                    <a href="https://www.youtube.com/user/inderoindero" target="_blank" class="fa fa-youtube"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-linkedin"></a>
+                    <a href="#" class="fa fa-instagram"></a>
                 </div>
 
+                <div id="contact">
+                    <p>Indro Hoffmann</p>
+                    <p>hoffmannindro@gmail.com</p>
+                    <p>040453322211</p>
+                    <p>Finland</p>
+                </div>
+            </footer>
 
 
-            </div>
         </div>
-        <footer>
-            <div id="socialmedia">
-                <!--My socialmedia links are collected here-->
-                <a href="https://www.facebook.com/indero/?viewas=100000686899395" target="_blank"
-                    class="fa fa-facebook"></a>
-                <a href="https://www.youtube.com/user/inderoindero" target="_blank" class="fa fa-youtube"></a>
-                <a href="#" class="fa fa-twitter"></a>
-                <a href="#" class="fa fa-linkedin"></a>
-                <a href="#" class="fa fa-instagram"></a>
-
-
-            </div>
-            <div id="contact">
-                <p>Indro Hoffmann</p>
-                <p>hoffmannindro@gmail.com</p>
-                <p>040453322211</p>
-                <p>Finland</p>
-
-            </div>
-
-
-        </footer>
-    </div>
-    <script src="scriptti.js"></script>
+        <script src="scriptti.js"></script>
 </body>
 
 </html>
