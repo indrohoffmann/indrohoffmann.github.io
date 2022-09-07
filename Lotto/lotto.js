@@ -29,7 +29,7 @@ if (docSnap.exists()) {
         lotteryNameTable.textContent = docSnap.data().lotterysName;
         lotteryDadeTable.textContent = docSnap.data().lotterysEndDate;
         lotteryDescriptionTable.textContent = docSnap.data().lotterysDescription;
-        linkForShare.innerHTML = 'Share this link to invite people participate in raffle:  <a href="http://127.0.0.1:5500/join.html?ID=' + lottoID + '">http://127.0.0.1:5500/join.html?ID=' + lottoID + '</a>'
+        linkForShare.innerHTML = 'Share this link to invite people participate in raffle:  <a href="https://indrohoffmann.github.io/Lotto/join.html?ID=' + lottoID + '">https://indrohoffmann.github.io/Lotto/join.html?ID=' + lottoID + '</a>'
 
 
 
