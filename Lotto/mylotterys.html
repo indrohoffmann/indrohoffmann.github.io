@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My raffles</title>
+  <link rel="icon" type="image/x-icon" href="/media/favicon.png">
+</head>
+
+<body>
+  <div id="loadingIndicator">
+    <div class="spinner-border" role="status">s
+      <span class="visually-hidden">Loading...</span>
+    </div>
+  </div>
+  <div id="wrapper">
+    <!--mobile navigarion menu-->
+    <div id="menu">
+
+      <div class="exitbtn">
+        <img id="closeMenuBtn" src="media/exit-icon.png" alt="">
+      </div>
+      <div class="mobilenav">
+        <ul>
+          <li><a class="nav-link active" aria-current="page" href="index.html"><img class="nav-link-png-mob"
+                src="media/HomeMob.png" alt="home navigation link"></a></li>
+          <li><a class="nav-link active" aria-current="page" href="rules.html"><img class="nav-link-png-mob"
+                src="media/RulesMob.png" alt="rules navigation link"></a></li>
+          <li><a class="nav-link active" aria-current="page" href="aboutus.html"><img class="nav-link-png-mob"
+                src="media/AboutUsMob.png" alt="about us navigation link"></a></li>
+          <li><a class="nav-link active" aria-current="page" href="contact.html"><img class="nav-link-png-mob"
+                src="media/ContactMob.png" alt="contact navigation link"></a></li>
+        </ul>
+      </div>
+
+    </div>
+
+
+
+    <!--Emty space top of the page and logo-->
+    <div class="container-fluid">
+      <div class="row">
+        <div class=" roosa_gradient col-3">
+          <div class="logo">
+            <img src="media/Logo.png" class="img-fluid" alt="yeo">
+          </div>
+        </div>
+        <div class="col-6 roosa_gradient_mobile">
+          <img src="media/heading.png" class="img-fluid maintitle" alt="yeo">
+
+        </div>
+        <div class="col-sm-1"><a href="index.html" id="loggedInUser">Sign In</a><a href="index.html"
+            id="signInLink">Sign
+            In</a></div>
+        <div class="col-sm-1"><a href="index.html" id="loggingOut">Log out</a></div>
+        <div class="col-sm-1">
+          <div class="menudiv">
+            <img src="media/menubtnnoborder.png" id="menuBtn" alt="mobile menu button">
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!--Informational bootstrap row-->
+    <div class="container-fluid">
+      <div class="row ">
+
+        <!--Navigation menu-->
+        <div class="roosa_gradient d-none d-sm-none col-sm-3 d-md-block d-lg-block d-xl-block text-center ">
+
+          <ul class="nav flex-column ">
+            <li>
+              <a class="nav-link" id="homeLink" aria-current="page" href="index.html"><img class="nav-link-png"
+                  src="media/Home.png" alt="home navigation link"></a>
+            </li>
+            <li>
+              <a class="nav-link" id="hiddenMenuItemLoggedOut" href="mylotterys.html"><img class="nav-link-png"
+                  src="media/MyLotterys.png" alt="mylotterys navigation link"></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="rules.html"><img class="nav-link-png" src="media/Rules.png"
+                  alt="rules navigation link"></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="aboutus.html"><img class="nav-link-png" src="media/AboutUs.png"
+                  alt="about us navigation link"></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html"><img class="nav-link-png" src="media/contact.png"
+                  alt="contact navigation link"></a>
+            </li>
+          </ul>
+        </div>
+
+        <!--info and content-->
+        <div class="col-sm-6 bringContentForward">
+          <p>All your created raffles will appear here. If you haven't created one yet, you can do it from here:
+            <button class="btn btn-primary" id="createLottoBtnMylotteryPage">Create New Raffle</button></p>
+
+          <ul class="list-group">
+            <li>
+              <p><b>Raffles created by you:</b></p>
+            </li>
+
+            <li id="myCreatedLotterys"></li>
+
+
+          </ul>
+          <div id="myCreatedLotterysNotCreatedYet">No raffles created yet</div>
+        </div>
+
+      </div>
+    </div>
+    <!--graphics for a bottom of a page-->
+    <div class="container-fluid">
+      <div class="row fill">
+        <div class="roosa_gradient d-none d-sm-none col-sm-3 d-md-block d-lg-block d-xl-block">
+
+        </div>
+        <div class="col-6 col-sm-6 d-md-block d-lg-block d-xl-block">
+          <div class="bottom_graphics_boy">
+            <img class="bottom_graphics_mountains img-fluid" src="media/mountains.png" alt="yeo">
+            <img src="media/boy.png" class="img-fluid" alt="yeo">
+
+          </div>
+        </div>
+        <div class="col-md-3">
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="mobileMenu.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
+  </script>
+  <script type="module" src="./myLotterys.js"></script>
+  <script type="module" src="./session.js"></script>
+  <script type="module" src="header.js"></script>
+  <script type="module" src="./menu.js"></script>
+
+</body>
+
+</html>
