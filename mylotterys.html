@@ -47,95 +47,113 @@
     <!--Emty space top of the page and logo-->
     <div class="container-fluid">
       <div class="row">
+
         <div class=" roosa_gradient col-3">
           <div class="logo">
             <img src="media/Logo.png" class="img-fluid" alt="yeo">
           </div>
         </div>
-        <div class="col-6 roosa_gradient_mobile">
+
+
+        <div class="col-4 roosa_gradient_mobile">
           <img src="media/heading.png" class="img-fluid maintitle" alt="yeo">
-
         </div>
-        <div class="col-sm-1"><a href="index.html" id="loggedInUser">Sign In</a><a href="index.html"
-            id="signInLink">Sign
-            In</a></div>
-        <div class="col-sm-1"><a href="index.html" id="loggingOut">Log out</a></div>
-        <div class="col-sm-1">
-          <div class="menudiv">
-            <img src="media/menubtnnoborder.png" id="menuBtn" alt="mobile menu button">
+
+
+        <div class="col-2 roosa_gradient_mobile">
+          <a href="index.html" id="loggedInUser">Sign In</a><a href="index.html" id="signInLink">Sign
+            In</a>
+        </div>
+
+        <div class="col-1 roosa_gradient_mobile">
+          <a href="index.html" id="loggingOut"><i class="bi bi-box-arrow-left"></i>
+          </a>
+        </div>
+
+
+        <div class="col-2 roosa_gradient_mobile">
+          <div class="menudiv" id="menuBtn" alt="mobile menu button"><i class="bi bi-list"></i>
+
           </div>
         </div>
       </div>
+
     </div>
+    <!--Row ends-->
+
+  </div>
 
 
-    <!--Informational bootstrap row-->
-    <div class="container-fluid">
-      <div class="row ">
-
-        <!--Navigation menu-->
-        <div class="roosa_gradient d-none d-sm-none col-sm-3 d-md-block d-lg-block d-xl-block text-center ">
-
-          <ul class="nav flex-column ">
-            <li>
-              <a class="nav-link" id="homeLink" aria-current="page" href="index.html"><img class="nav-link-png"
-                  src="media/Home.png" alt="home navigation link"></a>
-            </li>
-            <li>
-              <a class="nav-link" id="hiddenMenuItemLoggedOut" href="mylotterys.html"><img class="nav-link-png"
-                  src="media/MyLotterys.png" alt="mylotterys navigation link"></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="rules.html"><img class="nav-link-png" src="media/Rules.png"
-                  alt="rules navigation link"></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="aboutus.html"><img class="nav-link-png" src="media/AboutUs.png"
-                  alt="about us navigation link"></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html"><img class="nav-link-png" src="media/Contact.png"
-                  alt="contact navigation link"></a>
-            </li>
-          </ul>
-        </div>
-
-        <!--info and content-->
-        <div class="col-sm-6 bringContentForward">
-          <p>All your created raffles will appear here. If you haven't created one yet, you can do it from here:
-            <button class="btn btn-primary" id="createLottoBtnMylotteryPage">Create New Raffle</button></p>
-
-          <ul class="list-group">
-            <li>
-              <p><b>Raffles created by you:</b></p>
-            </li>
-
-            <li id="myCreatedLotterys"></li>
 
 
-          </ul>
-          <div id="myCreatedLotterysNotCreatedYet">No raffles created yet</div>
-        </div>
+  <!--Informational bootstrap row-->
+  <div class="container-fluid">
+    <div class="row ">
+
+      <!--Navigation menu-->
+      <div class="roosa_gradient d-none d-sm-none col-sm-3 d-md-block d-lg-block d-xl-block text-center ">
+
+        <ul class="nav flex-column ">
+          <li>
+            <a class="nav-link" id="homeLink" aria-current="page" href="index.html"><img class="nav-link-png"
+                src="media/Home.png" alt="home navigation link"></a>
+          </li>
+          <li>
+            <a class="nav-link" id="hiddenMenuItemLoggedOut" href="mylotterys.html"><img class="nav-link-png"
+                src="media/MyLotterys.png" alt="mylotterys navigation link"></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="rules.html"><img class="nav-link-png" src="media/Rules.png"
+                alt="rules navigation link"></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="aboutus.html"><img class="nav-link-png" src="media/AboutUs.png"
+                alt="about us navigation link"></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html"><img class="nav-link-png" src="media/Contact.png"
+                alt="contact navigation link"></a>
+          </li>
+        </ul>
+      </div>
+
+      <!--info and content-->
+      <div class="col-sm-6 bringContentForward">
+        <h3>Created raffles</h3>
+        <p>All your created raffles will appear here. If you haven't created one yet, you can do it from here:
+          <button class="btn btn-primary" id="createLottoBtnMylotteryPage">Create New Raffle</button></p>
+
+        <ul class="list-group">
+          <li>
+            <p><b>Raffles created by you:</b></p>
+          </li>
+
+          <li id="myCreatedLotterys"></li>
+
+
+        </ul>
+        <div id="myCreatedLotterysNotCreatedYet">No raffles created yet</div>
+      </div>
+
+    </div>
+  </div>
+  <!--graphics for a bottom of a page-->
+  <div class="container-fluid">
+    <div class="row fill">
+      <div class="roosa_gradient d-none d-sm-none col-sm-3 d-md-block d-lg-block d-xl-block">
 
       </div>
-    </div>
-    <!--graphics for a bottom of a page-->
-    <div class="container-fluid">
-      <div class="row fill">
-        <div class="roosa_gradient d-none d-sm-none col-sm-3 d-md-block d-lg-block d-xl-block">
+      <div class="col-6 col-sm-6 d-md-block d-lg-block d-xl-block">
+        <div class="bottom_graphics_boy">
+          <img class="bottom_graphics_mountains img-fluid" src="media/mountains.png" alt="yeo">
+          <img src="media/boy.png" class="img-fluid" alt="yeo">
 
-        </div>
-        <div class="col-6 col-sm-6 d-md-block d-lg-block d-xl-block">
-          <div class="bottom_graphics_boy">
-            <img class="bottom_graphics_mountains img-fluid" src="media/mountains.png" alt="yeo">
-            <img src="media/boy.png" class="img-fluid" alt="yeo">
-
-          </div>
-        </div>
-        <div class="col-md-3">
         </div>
       </div>
+      <div class="col-md-3">
+      </div>
     </div>
+  </div>
   </div>
   <script src="mobileMenu.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
