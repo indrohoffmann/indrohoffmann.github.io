@@ -253,6 +253,12 @@ margin-right: 0.5rem;
     margin-right: 15rem;
 }
 
+.titleParticipants {
+    font-weight: bold;
+    border-bottom: none;
+}
+
+
 #myCreatedLotterys {
     /*background-color: antiquewhite;*/
     margin-top: 1rem;
@@ -270,11 +276,6 @@ margin-right: 0.5rem;
 }
 
 #lottoParticipantsTable{
-    border-bottom: none;
-}
-
-#titleParticipants {
-    font-weight: bold;
     border-bottom: none;
 }
 
