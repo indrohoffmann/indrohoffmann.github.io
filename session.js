@@ -1,5 +1,5 @@
-//Selleks et hoida lubada kasutajat ligi teatud lehtedele
-//et kasutada firebase funktsioone firebase.js iset
+// Forholding user session in certain pages
+
 import * as firebase from "./firebase.js"
 
 // Initialize Firebase Authentication and get a reference to the service

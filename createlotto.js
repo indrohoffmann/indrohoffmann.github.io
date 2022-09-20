@@ -1,5 +1,5 @@
-//Uue loto loomiseks
-//et kasutada firebase funktsioone firebase.js iset
+//For creating new raffle
+//For using functions inside of Firebase.js
 import * as firebase from "./firebase.js"
 
 
@@ -14,15 +14,15 @@ let createNewLotteryBtn = document.querySelector("#createNewLotteryBtn");
 createNewLotteryBtn.onclick = async function (e) {
     e.preventDefault(); //Preventing page refresh after signIn button pressed
 
-    //try proovib lisada dokumenti
+    //try-trying to add document
     try {
-        //Selleks et kätte saada lotto looja/creator
+        //For getting raffles creator
         const auth = firebase.getAuth();
         const user = auth.currentUser;
-        //Siin kontrollib kas user olemas
+        //Checking that is user exists
         if (user !== null) {
             const uid = user.uid;
-            //dokumendi referets dokumendi andmed
+            //Document reference/document data
             const docRef = await firebase.addDoc(firebase.collection(firebase.db, "Lottos"), {
                 lotterysName: lotterysName.value,
                 lotterysEndDate: lotterysEndDate.value,

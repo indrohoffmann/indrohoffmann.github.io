@@ -1,6 +1,6 @@
-//Selleks et my lottery oleks nähtav kui kasutaja on sisse logitud ja vastupidi
+//For showing "MyLottery" sections for logged in users and hidding for logged out visitors
 
-//et kasutada firebase funktsioone firebase.js iset
+//For using firebase.js funktions
 import * as firebase from "./firebase.js"
 
 var myLotterysMenuItem = document.getElementById("hiddenMenuItemLoggedOut")

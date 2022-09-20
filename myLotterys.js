@@ -1,7 +1,7 @@
 import * as firebase from "./firebase.js"
 
-const auth = await firebase.getAuth(firebase.app);
-let userCurrent = await auth.currentUser;
+const auth = firebase.getAuth(firebase.app);
+let userCurrent
 
 
 firebase.onAuthStateChanged(auth, (user) => {
@@ -12,9 +12,9 @@ firebase.onAuthStateChanged(auth, (user) => {
     }
 });
 
-
 const querySnapshot = await firebase.getDocs(firebase.collection(firebase.db, "Lottos"));
 
+//Filtering Lottos for current user
 const filterdLottos = querySnapshot.docs.filter((doc) => {
     return userCurrent.uid == doc.data().creator
 })
@@ -27,10 +27,8 @@ createLottoBtnMylotteryPage.onclick = function (e) {
 };
 
 filterdLottos.forEach((doc) => {
-    //siia et creatiks uue elemendi kuidas doc datast saab nime end date jne.
 
-
-    //kontrollib et oleksid nähtaval ainult kasutaja omad lotod
+    //Checking for only lotos wich belong to current loogged in user
 
     const myCreatedLotterys = document.getElementById("myCreatedLotterys");
     let newListElement = document.createElement('li');

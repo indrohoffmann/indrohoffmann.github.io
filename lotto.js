@@ -1,11 +1,11 @@
-//Selleks et saada kätte konkreetse lotto infot
+//For getting information about certain raffle
 import * as firebase from "./firebase.js"
 
-//et saada parameereid kätte lingist
+//Getting parametes from link
 let params = new URLSearchParams(document.location.search);
 
 
-//oootab just ID nimega parameetrit et siis muid parameetried ei kuula
+//Waiting dpecificly parameter with name "ID" Does not listen other parameters
 let lottoID = params.get("ID");
 
 //kust kohast ja millist documenti tahan saada
@@ -16,7 +16,7 @@ const user = auth.currentUser;
 
 
 
-//Et kui dokument eksisteerib siis...
+//If the document exists then function starts
 if (docSnap.exists()) {
     if (user.uid == docSnap.data().creator) {
 
@@ -25,7 +25,7 @@ if (docSnap.exists()) {
         const lotteryDescriptionTable = document.getElementById("lotteryDescriptionTable");
         const linkForShare = document.getElementById("linkForShare");
 
-        //doc.data on siis tabeli sisu. .docSnap.data().lotterysName on siis json data firebasest.
+        //doc.data is table content. .docSnap.data().lotterysName Is JSON data from firebase.
         lotteryNameTable.textContent = docSnap.data().lotterysName;
         lotteryDadeTable.textContent = docSnap.data().lotterysEndDate;
         lotteryDescriptionTable.textContent = docSnap.data().lotterysDescription;
@@ -34,11 +34,11 @@ if (docSnap.exists()) {
 
 
 
-        //saame osalejad kätte databasest
+        //Getting participants from database
         const participantsFromDatabase = docSnap.data().participants;
         const lottoParticipantsTable = document.getElementById("lottoParticipantsTable");
 
-        //Kontrollib kas on yldse kasutajaid liitund
+        //Checking is there any participants joined
         if (participantsFromDatabase.length === 0) {
 
             console.log("There are no joined users jet")
@@ -68,20 +68,3 @@ if (docSnap.exists()) {
     // doc.data() will be undefined in this case
     console.log("No such document!");
 }
-
-
-
-//see töötav for each näide
-/*const companies = ["Apple", "Google", "Facebook"];
-        const lottoParticipantsTable = document.getElementById("lottoParticipantsTable")
-
-
-        //loopiib läbi compnies "company" loon ise mis on yks item arrayst
-       /* companies.forEach((company) => {
-            let participantsIntoList = document.createElement('li');
-            participantsIntoList.innerText = company;
-            lottoParticipantsTable.appendChild(participantsIntoList);
-            console.log(company);
-        });
-
-*/

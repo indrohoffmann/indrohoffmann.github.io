@@ -1,4 +1,3 @@
-//et kasutada firebase funktsioone firebase.js iset
 import * as firebase from "./firebase.js"
 
 // Initialize Firebase Authentication and get a reference to the service
@@ -9,14 +8,14 @@ let password = document.querySelector("#password")
 let registerBtn = document.querySelector("#registerBtn")
 
 
-//register account
+//Register account
 registerBtn.onclick = function (e) {
   e.preventDefault();
   firebase.createUserWithEmailAndPassword(auth, email.value, password.value)
     .then((userCredential) => {
       // Signed in 
       const user = userCredential.user;
-      // Selleks et lisada nimi andmebaasi
+      //For adding name into database
 
       firebase.updateProfile(user, {
         displayName: firstName.value + " " + lastName.value,

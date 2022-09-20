@@ -1,6 +1,6 @@
-//Selleks et näidata kasutaja nime ja logout nuppu
+//For showing username and logout button
 
-//et kasutada firebase funktsioone firebase.js iset
+//For using functions from firebase.js
 import * as firebase from "./firebase.js"
 
 var loggedInUser = document.getElementById('loggedInUser');

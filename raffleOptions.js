@@ -1,11 +1,11 @@
 //Selleks et saada kätte konkreetse lotto infot
 import * as firebase from "./firebase.js"
 
-//et saada parameereid kätte lingist
+//For getting link parameters
 let params = new URLSearchParams(document.location.search);
 
 
-//oootab just ID nimega parameetrit et siis muid parameetried ei kuula
+//Waiting dpecificly parameter with name "ID" Does not listen other parameters
 let lottoID = params.get("ID");
 
 const docRef = firebase.doc(firebase.db, "Lottos", lottoID);
@@ -14,7 +14,7 @@ const docSnap = await firebase.getDoc(docRef);
 let startRaffle = document.getElementById("startRaffle");
 
 
-//saame osalejad kätte databasest
+//Getting participants from database
 const participantsFromDatabase = docSnap.data().participants;
 
 startRaffle.onclick = function (e) {
@@ -22,15 +22,15 @@ startRaffle.onclick = function (e) {
 
 
     console.log(participantsFromDatabase)
-    //Kontrollib kas on yldse kasutajaid liitund
+    //Checking is there any users joined with lotto
     if (participantsFromDatabase.length > 1) {
-        //lisame false kasutajale
+        //Adding false for user
         participantsFromDatabase.forEach((oneParticipant) => {
             oneParticipant.loositud = false
             console.log(oneParticipant)
         });
         participantsFromDatabase.forEach((oneParticipant) => {
-            //filtreerim arrayst välja kes ei ole tema ise ja looosi seisund on true
+            //filtreerim arrayst välja kes ei ole tema ise ja looosi seisund on true Filtering out of array user that is not himself and when raffle status is true
             let filteredParticipants = participantsFromDatabase.filter((participant) => {
                 return participant.loositud == false && participant.email != oneParticipant.email
             })
@@ -54,7 +54,7 @@ startRaffle.onclick = function (e) {
         console.log(participantsFromDatabase)
     }
 
-    //Et see foreach siis teeb iga array elemendi kohta käivitab siis selle funkstioooni mis on arrov functioni sees
+
 
 
 };
